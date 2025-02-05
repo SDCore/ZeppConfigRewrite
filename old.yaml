@@ -1,0 +1,2766 @@
+# Apex Legends
+prefix: "!"
+
+levels:
+    "106391128718245888": 100 # Dragory
+    "542068272007217193": 100 # Admin
+    "542793364722941972": 75 # Moderators
+    "1168243469458878566": 50 # Trial Moderators
+    "543059516393259019": 10 # Subreddit Moderators
+    "542018236405907466": 10 # Respawn
+    "543880801025130517": 10 # EA
+    "583215397004640261": 10 # Retired Staff
+    "571248472351571968": 5 # Legend
+    "123456789123456789": 0 # Test
+
+plugins:
+    cases:
+        config:
+            case_log_channel: "542737726513086475"
+            log_automatic_actions: true
+
+    mutes:
+        config:
+            mute_role: "542778295599497216"
+            move_to_voice_channel: "542821383260995635"
+            dm_on_mute: true
+            dm_on_update: true
+            message_on_mute: true
+            message_on_update: true
+            mute_message: "You have been muted indefinitely on the Apex Legends server. Reason given: {reason}. This mute is indefinite until you appeal by messaging Modmail (<@!542736472155881473>)."
+            timed_mute_message: "You have been muted for {time} on the Apex Legends server. Reason given: {reason}"
+            update_mute_message: "The duration of your mute on the Apex Legends server has been updated to {time}."
+            message_channel: "705290995339755562"
+
+    utility: {}
+    post: {}
+    channel_archiver: {}
+    reaction_roles:
+        config:
+            auto_refresh_interval: 900000 # 15min
+
+    role_buttons:
+        config:
+            buttons:
+                my_roles:
+                    message:
+                        channel_id: "843785815267475496"
+                        message_id: "1261155046268080188"
+                    options:
+                        - role_id: "833670063424798730"
+                          emoji: "628023772875587584"
+                          label: "Game Announcements"
+                          style: "SECONDARY"
+                        - role_id: "833670294429237278"
+                          emoji: "📣"
+                          label: "Server Announcements"
+                          style: "SECONDARY"
+                        - role_id: "846289041288724501"
+                          emoji: "824410396977790997"
+                          label: "eSports Announcements"
+                          style: "SECONDARY"
+                        - role_id: "772594655237505034"
+                          emoji: "🥳"
+                          label: "Party Pings"
+                          style: "SECONDARY"
+                        - role_id: "1045373030693605537"
+                          emoji: "🎁"
+                          label: "Giveaway Pings"
+                          style: "SECONDARY"
+                        - role_id: "818306762042114049"
+                          emoji: "🖌️"
+                          label: "Fanart Embeds"
+                          style: "SECONDARY"
+                legend_colours:
+                    message:
+                        channel_id: "669326208273743912"
+                        message_id: "991983687459668069"
+                    exclusive: true
+                    options:
+                        - role_id: "770613937040654376"
+                          emoji: "<a:RoleBlue:991987108292075550>"
+                          label: "Blue"
+                          style: "SECONDARY"
+                        - role_id: "668608582320914472"
+                          emoji: "<a:RolePink:991986661913272371>"
+                          label: "Pink"
+                          style: "SECONDARY"
+                        - role_id: "668608583885258773"
+                          emoji: "<a:RoleOrange:991987443819610123>"
+                          label: "Orange"
+                          style: "SECONDARY"
+                        - role_id: "668608580945051658"
+                          emoji: "<a:RoleGreen:991987786561359902>"
+                          label: "Green"
+                          style: "SECONDARY"
+                test_embed:
+                    message:
+                        channel_id: "542742664165195787"
+                        content:
+                            embeds:
+                                - title: "Pick your role below!"
+                                  color: 0x0088FF
+                                  description: "<@209918799321759754>"
+                    options:
+                        - role_id: "1045373030693605537"
+                          emoji: "🎁"
+                          label: "Giveaway Pings"
+                          style: "SECONDARY"
+                pride_month:
+                    message:
+                        channel_id: "1246312969084862596"
+                        message_id: "1246316183653847060"
+                    exclusive: false
+                    options:
+                        - role_id: "1246317262957183018"
+                          emoji: "<:ApexPride_Agender:1246311211017043978>"
+                          label: "Agender"
+                          style: "SECONDARY"
+                        - role_id: "1246317123027075145"
+                          emoji: "<:ApexPride_Ally:1246311212086460447>"
+                          label: "Ally"
+                          style: "SECONDARY"
+                        - role_id: "1246317248067534858"
+                          emoji: "<:ApexPride_Aromantic:1246311213344751666>"
+                          label: "Aromantic"
+                          style: "SECONDARY"
+                        - role_id: "1246317275225784370"
+                          emoji: "<:ApexPride_Asexual:1246311214179422278>"
+                          label: "Asexual"
+                          style: "SECONDARY"
+                        - role_id: "1246317283874443294"
+                          emoji: "<:ApexPride_Bisexual:1246311215404286003>"
+                          label: "Bisexual"
+                          style: "SECONDARY"
+                        - role_id: "1246317291293904938"
+                          emoji: "<:ApexPride_Genderfluid:1246311216083632190>"
+                          label: "Genderfluid"
+                          style: "SECONDARY"
+                        - role_id: "1246317297895739504"
+                          emoji: "<:ApexPride_Genderqueer:1246311217849434222>"
+                          label: "Genderqueer"
+                          style: "SECONDARY"
+                        - role_id: "1246317304430727248"
+                          emoji: "<:ApexPride_Intersex:1246311218902470676>"
+                          label: "Intersex"
+                          style: "SECONDARY"
+                        - role_id: "1246317310873043034"
+                          emoji: "<:ApexPride_Lesbian:1246311306512830565>"
+                          label: "Lesbian"
+                          style: "SECONDARY"
+                        - role_id: "1246317317571481671"
+                          emoji: "<:ApexPride_MLM:1246311221922365481>"
+                          label: "MLM"
+                          style: "SECONDARY"
+                        - role_id: "1246317323933978725"
+                          emoji: "<:ApexPride_Nonbinary:1246311329065598997>"
+                          label: "Nonbinary"
+                          style: "SECONDARY"
+                        - role_id: "1246317330019913749"
+                          emoji: "<:ApexPride_Pansexual:1246311225424613469>"
+                          label: "Pansexual"
+                          style: "SECONDARY"
+                        - role_id: "1246317336890183713"
+                          emoji: "<:ApexPride_Trans:1246311351274438656>"
+                          label: "Transgender"
+                          style: "SECONDARY"
+                hallo_bee_n:
+                    message:
+                        channel_id: "1290505930869440543"
+                        message_id: "1290507996903772170"
+                    exclusive: true
+                    options:
+                        - role_id: "1289861713923149865"
+                          emoji: "<:pumpkin_angbee:1290505286662225942>"
+                          label: "pumpkin"
+                          style: "SECONDARY"
+                        - role_id: "1290502418739757156"
+                          emoji: "<:bat_angbee:1290505283084357664>"
+                          label: "angbat"
+                          style: "SECONDARY"
+                        - role_id: "1290502429560934523"
+                          emoji: "<:ghost_angbee:1290505285617848374>"
+                          label: "bghost"
+                          style: "SECONDARY"
+                        - role_id: "1290502439706955776"
+                          emoji: "<:witch_angbee:1290505287723257886>"
+                          label: "witch"
+                          style: "SECONDARY"
+                        - role_id: "1290502447193657385"
+                          emoji: "<:candy_angbee:1290505288725692456>"
+                          label: "candy"
+                          style: "SECONDARY"
+                holi-doozle:
+                    message:
+                        channel_id: "1317315304681898005"
+                        message_id: "1317322170728185856"
+                    exclusive: true
+                    options:
+                        - role_id: "1317320878404538440"
+                          emoji: "<:ApexDreidel_smallfry:1317318458349981796>"
+                          label: "Apex Dreidel"
+                          style: "SECONDARY"
+                        - role_id: "1317320886709256192"
+                          emoji: "<:ApexMenorah_smallfry:1317318475840094258>"
+                          label: "Apex Menorah"
+                          style: "SECONDARY"
+                        - role_id: "1317320902420992111"
+                          emoji: "<:NessieCrimmyTree_smallfry:1317318678693543946>"
+                          label: "Nessie Crimmy Tree"
+                          style: "SECONDARY"
+                        - role_id: "1317320866870067292"
+                          emoji: "<:NessiePresent_smallfry:1317318666135539793>"
+                          label: "Nessie Present"
+                          style: "SECONDARY"
+                        - role_id: "1317320894435295322"
+                          emoji: "<:NessieCandyCane_smallfry:1317318498896314418>"
+                          label: "Nessie Candy Cane"
+                          style: "SECONDARY"
+
+    counters:
+        config:
+            counters:
+                alert_count:
+                    per_user: true
+                    triggers:
+                        temp_mute_threshold:
+                            condition: ">=2"
+                        perma_mute_threshold:
+                            condition: ">=3"
+                    decay:
+                        amount: 1
+                        every: 7d
+                legend:
+                    per_user: true
+                    initial_value: 999
+                    triggers:
+                        grant_legend:
+                            condition: ">=2500"
+                        cap_counter:
+                            condition: ">=2750"
+                    decay:
+                        amount: 1
+                        every: 12h
+                nnn_nsfw:
+                    per_user: true
+                    triggers:
+                        temp_mute_threshold:
+                            condition: ">=5"
+                        perma_mute_threshold:
+                            condition: ">=7"
+                    decay:
+                        amount: 1
+                        every: 1d
+        overrides:
+            - level: ">=100"
+              config:
+                  can_edit: true
+            - level: ">=100"
+              config:
+                  can_reset_all: true
+
+    tags:
+        config:
+            categories:
+                # Tags for #use-bots-here
+                use_bots_here_tags:
+                    can_use: false
+                    tags:
+                        powerball: '{if(eq(rand(292000000), 1), concat("You won!", " WE GOT A WINNER <@&542124834948251648>"), "No win this time.")}'
+
+                arg:
+                    can_use: true
+                    tags:
+                        SIMULACRUM: |-
+                            <@!{user.id}> Here are the real values.
+                            1[FIVE]C+C B+C
+                            2[SIX].B+C H-A 
+                            3[TWO]B+B M-J
+
+                            https://en.wikipedia.org/wiki/Mona_Lisa
+                            “cuaio fgyoc dsoqx zowck svugy yfffz hxqmj” 
+                            Solve it and send him the password.
+
+                        year:
+                            content: |-
+                                {set("start_of_year", parseDateTime(concat(formatTime(now(), "YYYY"), "-01-01T00:00:01.000Z")))}
+                                {set("end_of_year", parseDateTime(concat(formatTime(now(), "YYYY"), "-12-31T23:59:59.000Z")))}
+
+                                {set("prog_current_icon", "▀")}
+                                {set("prog_filled_icon", "█")}
+                                {set("prog_empty_icon", "░")}
+                                {set("progress_bar_tick_count", 15)}
+                                {set("progress_base", sub(now(), get("start_of_year")))}
+                                {set("progress_next", sub(get("end_of_year"), get("start_of_year")))}
+
+                                {set("prog_bar_counter", 0)}{set("prog_bar_ticks", round(div(add(0, get("progress_next")), get("progress_bar_tick_count")), 0))}{set("prog_bar_filled", round(div(add(0, get("progress_base")), add(0, get("prog_bar_ticks"))), 0))}{set("prog_bar_filled", if(eq(add(0, get("prog_bar_filled")), add(0, get("progress_bar_tick_count"))), sub(get("prog_bar_filled"), 1), get("prog_bar_filled")))}{set("prog_bar_unfilled", if(eq(get("prog_bar_filled"), 0), sub(get("progress_bar_tick_count"), 1), sub(get("progress_bar_tick_count"), get("prog_bar_filled"))))}
+                                {set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}
+                                {set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}{set("prog1", if(lt(div(strlen(get("prog1")), strlen(get("prog_filled_icon"))), get("prog_bar_filled")), concat(get("prog1"), get("prog_filled_icon")), get("prog1")))}
+                                {set("prog1", if(get("prog_current_icon"), concat(slice(get("prog1"), 0, mul(strlen(get("prog_filled_icon")), -1)), "", get("prog_current_icon")), get("prog1")))}
+                                {set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}
+                                {set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}{set("prog2", if(lt(div(strlen(get("prog2")), strlen(get("prog_empty_icon"))), get("prog_bar_unfilled")), concat(get("prog2"), get("prog_empty_icon")), get("prog2")))}
+                                {set("prog", concat(get("prog1"), get("prog2")))}
+
+                                ## The Year is **{round(mul(div(get("progress_base"), get("progress_next")), 100), 0)}**% over!
+                                <t:{round(div(get("start_of_year"), 1000), 0)}:d> **[**{get("prog")}**]** <t:{round(div(get("end_of_year"), 1000), 0)}:d>
+
+        overrides:
+            - level: ">=5"
+              config:
+                  can_use: true
+                  can_list: true
+                  allow_mentions: true
+
+            - level: ">=50"
+              config:
+                  delete_with_command: false
+
+            # Enable tags in #use-bots-here
+            - channel: "632283707482308608"
+              config:
+                  categories:
+                      use_bots_here_tags:
+                          can_use: true
+
+    slowmode: {}
+
+    starboard:
+        config:
+            boards:
+                fanart_highlights:
+                    enabled: false
+                    channel_id: "580286941744988183"
+                    stars_required: 7
+                memeboard:
+                    enabled: false
+                    channel_id: "668507768336023554"
+                    stars_required: 1
+                    show_star_count: false
+                modboard:
+                    enabled: false
+                    channel_id: "891031000417726555"
+                    stars_required: 1
+                    show_star_count: false
+        overrides:
+            - channel: "555828941252722716"
+              config:
+                  boards:
+                      fanart_highlights:
+                          enabled: true
+            - level: ">=50"
+              category: ["542431890615959562", "839268221433151488"]
+              config:
+                  boards:
+                      memeboard:
+                          enabled: true
+            - channel:
+                  [
+                      "592535074352922624",
+                      "543687476951384064",
+                      "554174713652445204",
+                      "1170106548345901146",
+                  ]
+              config:
+                  boards:
+                      modboard:
+                          enabled: true
+
+    auto_reactions: {}
+    pingable_roles: {}
+
+    self_grantable_roles:
+        config:
+            mention_roles: true
+            entries:
+                migrated:
+                    roles:
+                        "668608583885258773": ["orange"]
+                        "668608582320914472": ["pink"]
+                        "668608580945051658": ["green"]
+                        "770613937040654376": ["blue"]
+                    max_roles: 1
+        overrides:
+            - channel: "669326208273743912"
+              config:
+                  entries:
+                      migrated:
+                          can_use: true
+
+    roles:
+        config:
+            can_assign: false
+            can_mass_assign: false
+            assignable_roles:
+                - "912323275084939304" # bugbypass
+                - "888656495707836416" # content creator
+        overrides:
+            - level: ">=50"
+              config:
+                  can_assign: true
+            - level: ">=100"
+              config:
+                  can_mass_assign: true
+
+    auto_delete:
+        overrides:
+            - channel: "669326208273743912"
+              config:
+                  enabled: true
+                  delay: 5s
+            - level: ">=50"
+              config:
+                  enabled: false
+
+    reminders: {}
+    locate_user: {}
+
+    persist:
+        config:
+            persist_voice_mutes: true
+            # In order: Support Crew, Legend, LFG Ban
+            persisted_roles:
+                [
+                    "542828700270592060",
+                    "571248472351571968",
+                    "891551955560841236",
+                ]
+
+    mod_actions:
+        config:
+            # Warns
+            dm_on_warn: true
+            message_on_warn: false
+            # Kick/ban
+            dm_on_kick: true
+            dm_on_ban: true
+            # Old ban message
+            # ban_message: "You have been banned from the Apex Legends server.\nReason given: {reason}\n\nIf you'd like to appeal or discuss your ban, join the appeals server here and follow the instructions: https://discord.gg/rBtUR22"
+            # New ban message
+            ban_message: "You have been banned from the Apex Legends server.\nReason given: {reason}"
+            # Message channel
+            message_channel: "543020770700296213"
+        overrides:
+            - level: "<=50"
+              config:
+                  can_unban: false
+            - level: ">=100"
+              config:
+                  can_unban: true
+
+    logs:
+        config:
+            channels:
+                # server-log
+                "542737704266235914":
+                    exclude:
+                        [
+                            VOICE_CHANNEL_JOIN,
+                            VOICE_CHANNEL_LEAVE,
+                            VOICE_CHANNEL_MOVE,
+                            MEMBER_JOIN,
+                            MEMBER_LEAVE,
+                            POSTED_SCHEDULED_MESSAGE,
+                        ]
+                    excluded_channels:
+                        - "592535074352922624" # discord-mod-chat
+                        - "547863257604554762" # admin-treehouse
+                        - "592535074352922624" # mod-offtopic
+                    excluded_categories:
+                        - "542557896731394060" # LFG 1   - 50
+                        - "762813514154639360" # LFG 51  - 100
+                        - "762813602901000202" # LFG 101 - 150
+                        - "820067698318770216" # LFG 151 - 200
+                        - "839645354429513728" # LFG 201 - 250
+                        - "542564750706475008" # LFG 251 - 300
+                        - "543046676491927567" # LFG 301 - 311
+                    excluded_message_regexes:
+                        - "/^!lfg(\\s|$)/i"
+                        - "/^lf\\dm?(\\s|$)/i"
+                # general/stage channel logs
+                "977301999496359936":
+                    include:
+                        [
+                            VOICE_CHANNEL_JOIN,
+                            VOICE_CHANNEL_LEAVE,
+                            VOICE_CHANNEL_MOVE,
+                        ]
+                    excluded_categories:
+                        - "553324983640653827" # mod-offtopic
+                        - "542557896731394060" # lfg group 1
+                        - "762813514154639360" # lfg group 2
+                        - "762813602901000202" # lfg group 3
+                        - "820067698318770216" # lfg group 4
+                        - "839645354429513728" # lfg group 5
+                        - "542564750706475008" # lfg group 6
+                    # lfg vcs
+                "1118229943449559110":
+                    include:
+                        [
+                            VOICE_CHANNEL_JOIN,
+                            VOICE_CHANNEL_LEAVE,
+                            VOICE_CHANNEL_MOVE,
+                        ]
+                    excluded_categories:
+                        - "553324983640653827" # mod-offtopic
+                        - "755972661892612197" # events
+                        - "545331066345357312" # general vcs
+                        - "542560998893158448" # afk
+                # join-leave-log
+                "555863013757026334":
+                    include: [MEMBER_JOIN, MEMBER_LEAVE]
+                # alerts
+                "543757010290868225":
+                    include:
+                        [
+                            CENSOR,
+                            MESSAGE_SPAM_DETECTED,
+                            OTHER_SPAM_DETECTED,
+                            MEMBER_JOIN_WITH_PRIOR_RECORDS,
+                            AUTOMOD_ACTION,
+                            BOT_ALERT,
+                        ]
+
+    phisherman:
+        config:
+            api_key: "120740d9-62be-42f8-abf0-b0a6443c9c78"
+
+    automod:
+        config:
+            rules:
+                auto_temp_mute:
+                    triggers:
+                        - counter_trigger:
+                              counter: "alert_count"
+                              trigger: "temp_mute_threshold"
+                    actions:
+                        mute:
+                            reason: "Multiple infractions"
+                            duration: 1h
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                auto_perma_mute:
+                    triggers:
+                        - counter_trigger:
+                              counter: "alert_count"
+                              trigger: "perma_mute_threshold"
+                    actions:
+                        mute:
+                            reason: "Multiple infractions after temporary mute"
+
+                non_malicious_racial:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/what\s(does\s)?(this\s|the\s)?(nigger|faggot)(s)?(\sword)?\smean/i'
+                                  - '/(call?|say)(ing|ed|s|)\s[^]*?"?(nigger|faggot)s?"?/i'
+                                  - '/\/kick\s[^]*?(nigger|faggot)s?/i'
+                                  - '/("|“)[^]*?(nigger|faggot)s?("|”)/i'
+                        - match_words:
+                              words:
+                                  - snigger
+                                  - sniggering
+                    actions:
+                        log: false
+                        clean: true
+                        warn:
+                            reason: "Automatic warning for racial or homophobic slur usage. Please use ModMail to report any rule breaks."
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                loose_matches:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              normalize: true
+                              loose_matching: true
+                              words:
+                                  - nigger
+                                  - faggot
+                    actions:
+                        clean: true
+                        ban:
+                            reason: "Autoban for racial or homophobic slur."
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: ":hammer: {logMessage}"
+
+                soundmoji_filter:
+                    enabled: false
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "<sound:([0-9]{1,19}:[0-9]{1,19}|[1-6])>"
+                    actions:
+                        clean: true
+
+                non_malicious_hitler:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/((said|saying|bio)\s)[^]*?(heil|hail)\shitler/i'
+                                  - '/(heil|hail)\shitler\sguy/i'
+                                  - '/\/kick\s[^]*?((hail|heil)\shitler)s?/i'
+                    actions:
+                        log: false
+                        clean: true
+                        warn:
+                            reason: "Automatic warning for anti-semitism. Please use ModMail to report any rule breaks."
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                loose_matches_hitler:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              normalize: true
+                              loose_matching: true
+                              words:
+                                  - "hail hitler"
+                                  - "heil hitler"
+                    actions:
+                        clean: true
+                        ban:
+                            reason: "Autoban for anti-semitism."
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: ":hammer: {logMessage}"
+
+                antiraid_auto_kick:
+                    enabled: false
+                    triggers:
+                        - member_join:
+                              only_new: true
+                              new_threshold: 1440m
+                    actions:
+                        kick:
+                            reason: "Automatic new user kick"
+                            notify: "off"
+                        log: false
+
+                antiraid_auto_kick_all:
+                    enabled: false
+                    triggers:
+                        - member_join: {}
+                    actions:
+                        kick:
+                            reason: "Automatic anti-raid join kick"
+                            notify: "off"
+                        log: false
+
+                blocked_words_automute:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              normalize: true
+                              words:
+                                  - "niggur"
+                                  - "niqqer"
+                                  - "nighur"
+                                  - "niggurs"
+                                  - "feggot"
+                                  - "faggot"
+                                  - "faggots"
+                                  - "f@ggot"
+                                  - "faggit"
+                                  - "faqqot"
+                                  - "faqqots"
+                                  - "nigger"
+                                  - "niglet"
+                                  - "nigglet"
+                                  - "niggr"
+                                  - "niggha"
+                                  - "几丨ᎶᎶ乇尺丂"
+                                  - "几丨ᎶᎶ乇尺"
+                                  - "n||igge||r"
+                                  - "N||iceca||r"
+                                  - "ni||ce ca||r"
+                        - match_words:
+                              only_full_words: true
+                              normalize: true
+                              words:
+                                  - "negger"
+                                  - "nigge"
+                    actions:
+                        clean: true
+                        mute: {}
+                        log: false
+                        alert:
+                            channel: "543757010290868225"
+                            text: "{logMessage}"
+
+                blocked_words_nsfw:
+                    triggers:
+                        - match_links:
+                              include_words:
+                                  - "https://tenor.com/view/apex-legends-pathfinder-apex-mirage-finisher-gif-21867795"
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warn for NSFW"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                # To stop long spotify links from matching 'fag'
+                spotify_whitelist:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - 'spotify\.com.*(?=fag)'
+                              case_sensitive: false
+                    actions:
+                        clean: false
+                        log: false
+
+                blocked_words_homophobic:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              words:
+                                  - "fag"
+                                  - "fags"
+                                  - "fagg"
+                                  - "f@g"
+                                  - "batty boy"
+                        - match_words:
+                              only_full_words: false
+                              normalize: true
+                              words:
+                                  - "tranny"
+                                  - "trannies"
+                        - match_words:
+                              only_full_words: true
+                              words:
+                                  - "fgt"
+                                  - "fgts"
+                        - match_regex:
+                              patterns:
+                                  - '/(?<!van\s)dyke/i'
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for Homophobic slur usage"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "543757010290868225"
+                            text: |-
+                                {logMessage}
+                                {messageLink}
+
+                blocked_words_racial:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              words:
+                                  - "nigg4"
+                                  - "negga"
+                                  - "nigaa"
+                                  - "jigga"
+                                  - "ni:b::b:a"
+                                  - "nibba"
+                                  - "nibbas"
+                                  - "nibber"
+                                  - "n*gga"
+                                  - "黑鬼"
+                                  - "negroes"
+                                  - "negroid"
+                                  - "ching chong"
+                                  - "niqqa"
+                                  - "niqqas"
+                                  - "nigar"
+                                  - "nigare"
+                        - match_words:
+                              only_full_words: true
+                              normalize: true
+                              words:
+                                  - "chink"
+                                  - "chinks"
+                                  - "i hate asians"
+                                  - "nig"
+                                  - "nga"
+                                  - "niga"
+                                  - "nig-"
+                                  - "nigs"
+                                  - "niiga"
+                                  - "nig...."
+                                  - "nig____"
+                                  - "nigg"
+                                  - "nigha"
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for Racial slur usage"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                # Previously blocked_regex (partially replaced by loose matches)
+                blocked_regex_racial:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "/n[il1]+g{2,}(er|a)/i"
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for Racial slur usage"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                blocked_tokens_spam:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              words:
+                                  - "𒐫"
+                                  - "﷽"
+                                  - "size=我将尽"
+                                  - "卍"
+                                  - "卐"
+                                  - "@everyone @everyone @everyone"
+                                  - "@everyone@everyone@everyone"
+                        - match_regex:
+                              patterns:
+                                  - "[⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿]"
+                                  - "[░▐▌█▀▄]"
+                                  - "/^ñ$/i"
+                                  - '/I\swill\shelp\s\d\d\speople\son\show\sto\searn\s\$\d\d,\d{2,4}\sor\smore\sin\sjust\s\d\dho?u?rs\sfrom\sthe\scrypto\smarket/i'
+                                  - '/anyone\sinterested\show\sto\strade\sand\searn[^]{0,30}the crypto/i'
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for spam detection"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                blocked_tokens_copypasta:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              words:
+                                  - "Copy and paste this to all of the servers you are in"
+                                  - "９７％　ｏｆ　ｔｅｅｎａｇｅｒｓ"
+                                  - "Use my referral link to buy Oculus Quest 2"
+                                  - "Hey guys, just wanted to wish you all happy holidays. Discord is filled with ready-made messages"
+                                  - "WARNING! Carry on reading!"
+                                  - "They will figure out your personal computer's IP and address, so copy & paste this message"
+                                  - "Our team is currently working very hard to remove this user from our database"
+                                  - "Copy And Paste Him In"
+                                  - "Help memecat take over"
+                                  - "discord by pasting"
+                                  - "Once there was a little girl called"
+                                  - "Pi is a new digital currency being developed by a group of Stanford PhDs"
+                                  - "please send to 15 other users using copy and paste"
+                                  - "•You Can Play Arena and Battle royals (For most of the people)"
+                                  - "we need to copy paste this"
+                                  - "such as genital piercing, wax play, genital spanking, squeezing"
+                                  - "I work as an employee for the Kame Yu department stores, and I get home every day"
+                                  - "I showed my champion underwear to my girlfriend"
+                                  - "Hi bro, found software with free discord nitro and SkinChanger"
+                                  - "Please read this carefully: An urgent warning, beware of a Discord user named"
+                                  - "This is IMPORTANT: Do not accept a friend request from"
+                                  - "If you don't send this to 20 people I will sleep by your side forever"
+                                  - "You have been randomly selected to win 1.65 DICK cryptocurrency!"
+                                  - "Anyone want to be my boyfriend and protect me on Roblox"
+                                  - "JOIN THE SYRUP CULT"
+                                  - ":WhiteNameL:"
+                                  - "Student watches porn and gets naked. A Bangladeshi 20 year old"
+                                  - "Hello, meu nome é Yoshikage Kira."
+                                  - "here is a serious issue going around on discord and everyone needs to be made"
+                                  - "Super Idol的笑容 都没你的甜 八月正午的阳光 都没你耀眼 热爱 105 °C的你 滴滴清纯的蒸馏水"
+                                  - "So I was walking down the street an this guy on drugs"
+                                  - "don’t care + didn’t ask + cry about it + stay mad"
+                                  - "So you wanna explain to me why you proceed to promote camping in your game so much?"
+                                  - "You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of"
+                                  - "Murdered by my brother in law Hank Schrader, hank has been building a meth empire for a year now and been"
+                                  - "my brother in law daquavion tavious, daquavion has been building a meth empire for a year now and been"
+                                  - "Hey any girls want to have Apex sex in the firing range"
+                                  - "put a heart in my profile linking to your profile and have a walltext of you commenting cute"
+                                  - "gameplay mechanic and off the grid would be a good idea and they should add it to the game for crypto so that his new passive is called off the grid. I had this idea"
+                                  - "They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy."
+                                  - "every single time I talk or type or even do anything or interact with anyone in the server everybody just goes against me and gangs up on me"
+                                  - "I am 60k kills hundreds of 20's/4ks"
+                                  - "Free 18+ Content:  :peach:"
+                                  - "Selling cashapp logs"
+                                  - "Please unclog your servers and let me play."
+                                  - "vexbolts"
+                                  - "Vexbolts"
+                                  - "vex bolts"
+                                  - "vexbolt"
+                                  - "vex bolt"
+                                  - "bolt vex"
+                                  - "boltvex"
+                                  - "boltbex"
+                                  - "voltvex"
+                                  - "I Suggest You Contact The LiveSupport System For Assistance"
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for posting copypasta"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                blocked_regex_exploit: #Discord Hidden Message Exploit
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '\|{10,}'
+                                  - '\|\|\|\|\S\|\|\|\|\S\|\|\|\|\S\|\|\|\|\S\|\|\|\|\S\|\|\|\|\S\|\|\|\|\S'
+                    actions:
+                        clean: true
+                        log: false
+                        warn:
+                            reason: "Reason: Automatic warning for Discord Exploit"
+                        alert:
+                            channel: "810498491008286760"
+                            text: |-
+                                Hidden Message Exploit
+                                {logMessage}
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+
+                blocked_regex_other:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "/(?<!ear\\s+)\\b(rape|raping|raped|rapes)\\b/i"
+                                  - 'only\stwo\sgenders?'
+                              normalize: true
+                        - match_words:
+                              only_full_words: false
+                              loose_matching: true
+                              words:
+                                  - "only 2 gender"
+                                  - "r*pe"
+                    actions:
+                        clean: true
+                        log: false
+                        alert:
+                            channel: "543757010290868225"
+                            text: |-
+                                {logMessage}
+                                {messageLink}
+
+                loose_matches_racial:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              normalize: true
+                              loose_matching: true
+                              words:
+                                  - nigga
+                                  - niggn
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for Racial slur usage"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                loose_matches_toxic:
+                    triggers:
+                        - match_words:
+                              only_full_words: false
+                              normalize: true
+                              loose_matching: true
+                              words:
+                                  - retard
+                                  - r*tard
+                                  - retarted
+                                  - midget
+                                  - "porch monkey"
+                        - match_regex:
+                              patterns:
+                                  - '/\btard\b/i'
+                                  - '/\retart\b/i'
+                                  # - "/(?<!((i('|’)?m|\\sam|called\\sme)(\\snot)?(\\sa)?)\\s)\\bsped\\b(?!\\s(it|that\\sshit))(?!\\s(run|up|past|down|off|ran|home|thr(u|ough)|away|to|there|fast))/i"
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for derogatory remark and toxicity"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                loose_matches_toxic_2:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/\bk\s?y\s?s\b(?!(\s*\(keep\syourself\ssafe\)|-keep-yourself-safe))/i'
+                              normalize: true
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for toxicity"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                slur_bait:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/^(n|ni|nig)\|\||\s(n|ni|nig)\|\|/i'
+                        - match_words:
+                              only_full_words: true
+                              normalize: true
+                              loose_matching: true
+                              words:
+                                  - "nickher"
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Automatic warning for racial slur bait"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                # Previously filter_invites and invite_guild_whitelist
+                blocked_invites_chats:
+                    triggers:
+                        - match_invites:
+                              exclude_guilds:
+                                  [
+                                      "541484311354933258",
+                                      "187157802416865281",
+                                      "165244564498677760",
+                                      "633157361074176000",
+                                      "689087868932849736",
+                                      "392534597696487444",
+                                      "652288765984899132",
+                                  ]
+                              exclude_invite_codes:
+                                  [
+                                      "apexlegends",
+                                      "ApexLegends",
+                                      "titanfall",
+                                      "TitanFall",
+                                      "Titanfall",
+                                      "gllapex",
+                                      "GLLApex",
+                                      "eagames",
+                                      "apexmobile",
+                                      "Apexmobile",
+                                      "ApexMobile",
+                                      "algs",
+                                      "ALGS",
+                                  ]
+                    actions:
+                        clean: true
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+                        warn:
+                            reason: "Reason: Automatic warning for Server Advertisement"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+
+                # Another rule because voice invites from the same server are removed if exclude_invite_codes is there
+                blocked_invites_lfg:
+                    triggers:
+                        - match_invites:
+                              exclude_guilds:
+                                  [
+                                      "541484311354933258",
+                                      "187157802416865281",
+                                      "165244564498677760",
+                                      "633157361074176000",
+                                      "689087868932849736",
+                                      "392534597696487444",
+                                      "652288765984899132",
+                                  ]
+                    actions:
+                        clean: true
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+                        warn:
+                            reason: "Reason: Automatic warning for Server Advertisement"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+
+                bad_names:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "nigger"
+                                  - "Νіggеrѕ"
+                                  - "nigga"
+                                  - "ngga"
+                                  - "niggn"
+                                  - "nigaa"
+                                  - "faggot"
+                                  - "faggit"
+                                  - "reggin"
+                                  - "sreggin"
+                                  - "卍"
+                                  - "卐"
+                                  - "retard"
+                                  - "nick gurr"
+                                  - "ching chong"
+                                  - "beaner"
+                                  - "kike"
+                                  - "tranny"
+                                  - "trannies"
+                                  - "holocaust"
+                                  - "nicholas gurr"
+                                  - "hitler"
+                                  - "niggur"
+                                  - "adolf hitler"
+                                  - "negroid"
+                                  - "negroes"
+                                  - "george floyd"
+                                  - "nigas"
+                                  - "᲼᲼"
+                                  - "nate higgers"
+                                  - "midget"
+                              only_full_words: false
+                              match_messages: false
+                              match_embeds: false
+                              match_visible_names: true
+                        - match_words:
+                              words:
+                                  - "coon"
+                              only_full_words: true
+                              match_messages: false
+                              match_embeds: false
+                              match_visible_names: true
+                    actions:
+                        change_nickname:
+                            name: "Gamer"
+                        warn:
+                            reason: "Reason: Automatic warning for Rule breaking name"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+
+                porn_link_ban:
+                    triggers:
+                        - match_links:
+                              include_domains:
+                                  - pornhub.com
+                                  - pornhub.org
+                                  - hentaihaven.com
+                                  - 2girls1cup.ca
+                                  - hentaidude.com
+                                  - xhamster.com
+                                  - xvideos.com
+                                  - thughunter.com
+                    actions:
+                        clean: true
+                        ban:
+                            reason: Porn Link
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: |-
+                                :hammer: Porn Link Ban {logMessage}
+
+                ip_logger_ban:
+                    triggers:
+                        - match_links:
+                              include_domains:
+                                  - iplogger.org
+                                  - iplogger.com
+                                  - iplogger.ru
+                                  - iplogger.co
+                                  - iplogger.info
+                                  - ipgrabber.ru
+                                  - ipgraber.ru
+                                  - iplogger.cn
+                                  - 02ip.ru
+                                  - wl.gl
+                                  - ed.tc
+                                  - bc.ax
+                                  - maper.info
+                                  - 2no.co
+                                  - yip.su
+                                  - iplis.ru
+                                  - 02ip.ru
+                                  - ezstat.ru
+                                  - grabify.link
+                                  - mymassive.yachts
+                                  - stonks.boats
+                                  - stonks.fun
+                                  - toes.beauty
+                                  - barefoot.pics
+                                  - shareit.pics
+                                  - gamer.tattoo
+                                  - shipment.website
+                                  - imagevault.cloud
+                                  - sugma.mom
+                                  - yum.mom
+                                  - plz.life
+                                  - massive.mom
+                                  - massive.boats
+                                  - mymassive.store
+                                  - mymassive.top
+                                  - gamer.hair
+                                  - photovault.pics
+                                  - bathtub.pics
+                                  - foot.wiki
+                                  - thisdomainislong.lol
+                                  - gamergirl.pro
+                                  - picshost.pics
+                                  - pichost.pics
+                                  - imghost.pics
+                                  - imagehost.pics
+                                  - toldyouso.lol
+                                  - toldyouso.pics
+                                  - screenshare.pics
+                                  - myprivate.pics
+                                  - noodshare.pics
+                                  - cheapcinema.club
+                                  - dateing.club
+                                  - shrekis.life
+                                  - headshot.monster
+                                  - progaming.monster
+                                  - yourmy.monster
+                                  - screenshot.best
+                                  - gamingfun.me
+                                  - catsnthing.com
+                                  - catsnthings.fun
+                                  - joinmy.site
+                                  - fortnitechat.site
+                                  - fortnight.space
+                                  - stopify.co
+                    actions:
+                        clean: true
+                        ban:
+                            reason: IP Logger
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: |-
+                                :hammer: IP Logger ban {logMessage}
+
+                steam_scam_filter_2:
+                    triggers:
+                        - match_links:
+                              phisherman:
+                                  include_suspected: true
+                                  include_verified: true
+                    actions:
+                        clean: false
+                        log: false
+                        ban:
+                            duration: 1d
+                            reason: "Your Discord account was compromised and was posting malicious links on the server. Please change the password for your account and email and add Two-Factor Authentication as soon as possible! You will be able to join back after one day."
+                        alert:
+                            channel: "810498491008286760"
+                            text: |-
+                                :hammer: Scam link auto-ban (filter 2)
+                                {logMessage}
+
+                # Referal link spam
+                referal_spam_links:
+                    triggers:
+                        - match_links:
+                              include_subdomains: true
+                              only_real_links: false
+                              include_domains:
+                                  - pokemongolive.com
+                                  - mgapex.com
+                                  - link.clashroyale.com
+                                  - clashroyale.com
+                                  - lastcryptonews.tiny.us
+                                  - zleague.gg
+                                  - sjunkie.co
+                                  - social.sjunkie.co
+                                  - vacban.wtf
+                                  - duolingo.com
+                                  - giftworld.app
+                                  - invite.duolingo.com
+                                  - adj.st
+                                  - getcoinmaster.com
+                                  - link.plrm.zone
+                                  - plrm.zone
+                                  - purp.social
+                                  - t.snapchat.com
+                                  - temu.com
+                                  - gift-rust.com
+                                  - eneba.com
+                                  - r.honeygain.me
+                                  - honeygain.me
+                                  - getpaidnow.app
+                                  - own3d.pro
+                                  - minepi.com
+                                  - kolibrigames.com
+                              case_sensitive: false
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Automatic warning: Referral links not allowed"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                block_hypermyst_links:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "(.*)twitter\\.com\\/hypermystx(.*)"
+                                  - "(.*)x\\.com\\/hypermystx(.*)"
+                                  - "(.*)vxtwitter\\.com\\/hypermystx(.*)"
+                                  - "(.*)fixupx\\.com\\/hypermystx(.*)"
+                                  - "(.*)fxtwitter\\.com\\/hypermystx(.*)"
+                    actions:
+                        clean: true
+
+                blocked_words_no_action:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "temu"
+                                  - "diddy"
+                                  - "diiddy"
+                                  - "diidy"
+                                  - "didy"
+                              only_full_words: true
+                    actions:
+                        clean: true
+                        log: false
+                        alert:
+                            channel: "542737704266235914"
+                            text: "{logMessage}"
+
+                blocked_words_but_regex:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "/(g[o|0]{2,99}n)([i|1]ng|[e|3]r?s?)/"
+                                  # - '/\b[gG0]+[\s oO0]{1,99}[nN1!lI]+(?:[\s eE3rRsS]+|[iIl1!]+[nN1!]+[gG!]+)?(?!\w)/'
+                    actions:
+                        clean: true
+                        log: true
+
+                # Previously filter_domains
+                blocked_links:
+                    triggers:
+                        - match_links:
+                              include_subdomains: true
+                              only_real_links: false # Also match links that don't get highlighted
+                              include_domains:
+                                  - twitch-cs2-drops.com
+                                  - meet.google.com
+                                  - zoom.us
+                                  - teams.microsoft.com
+                                  - bit.ly
+                                  - bit.do
+                                  - clck.ru
+                                  - gg.gg
+                                  - tinyurl.com
+                                  - cutt.ly
+                                  - cutt.us
+                                  - discord.io
+                                  - t.me
+                                  - opensea.io
+                                  - pnrtscr.com # Screamer
+                                  - only-fans.uk # Screamer
+                                  - linkvertise.com
+                                  - link-center.net
+                                  - gofile.io
+                                  - shrinke.me
+                                  - xpshort.com
+                                  - chat.whatsapp.com
+                                  - goo.su
+                                  - rb.gy
+                                  - oke.io
+                                  - globalw31.me #cp
+                                  - shorturl.at
+                                  - deskdiscord.com
+                        - match_links:
+                              only_real_links: false # Also match links that don't get highlighted
+                              include_words:
+                                  - discord.gift/Udzwm3hrQECQBnEEFFCEwdSq
+                                  - discord.gift/6g9pSSvxCDaAFvYyFytyCDQB
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Automatic warning: Disallowed link"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                devs_threat:
+                    enabled: true
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "hope the devs kill themselves"
+                                  - "hope the devs fucking kill themselves"
+                                  - "hope to fucking god the dev team dies"
+                                  - "hope the apex devs suffocate in their sleep"
+                                  - "really hope Respawn devs die"
+                                  - "hope apex devs die"
+                                  - "Apex devs can all die"
+                                  - "hope the devs fucking kill themselves"
+                                  - "devs please kill yourselves"
+                                  - "the developers can die in a hole"
+                                  - "Developers pls die"
+                                  - "hope all the devs fucking die"
+                              only_full_words: false
+                              case_sensitive: false
+                        - match_regex:
+                              patterns:
+                                  - '/(devs?|developers?|dev\steam|apex\sdevs)\s(please|pls|fucking|please\sfucking|can(\sall)?)?(\s)?((kill\s(themselves|yourselves))|dies?|suffocate)/ig'
+                    actions:
+                        clean: false
+                        log: false
+                        alert:
+                            channel: "543757010290868225"
+                            text: |-
+                                **Suspected dev threat by <@!{user.id}> ({user.username}#{user.discriminator}, `{user.id}`):**
+                                {messageLink}
+                                {matchSummary}
+                    allow_further_rules: true
+
+                spam:
+                    triggers:
+                        - message_spam:
+                              amount: 8
+                              within: 9s
+                        - character_spam:
+                              amount: 3000
+                              within: 9s
+                        - mention_spam:
+                              amount: 8
+                              within: 30s
+                        - link_spam:
+                              amount: 5
+                              within: 15s
+                        - emoji_spam:
+                              amount: 18
+                              within: 30s
+                        - line_spam:
+                              amount: 31
+                              within: 20s
+                        - sticker_spam:
+                              amount: 5
+                              within: 30s
+                    actions:
+                        clean: true
+                        mute:
+                            duration: 60m
+                            reason: Automatic spam detection
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                no_chatter_in_bot_channel:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_regex:
+                              patterns: ["^[^!>]"]
+                    actions:
+                        clean: true
+                        log: false
+
+                suspicious_messages:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - nazi
+                                  - hitler
+                                  - yiff
+                                  - negro
+                                  - george floyd
+                                  - black lives
+                                  - black people
+                                  - black ppl
+                                  - i found a free
+                                  - <@&542124834948251648>
+                                  - i hate gay people
+                                  - gaypex
+                                  - taliban
+                                  - niger
+                                  - coin glitch
+                              only_full_words: false
+                              case_sensitive: false
+                        - match_words:
+                              words:
+                                  - xiled
+                                  - coon
+                                  - jew
+                                  - jews
+                                  - loli
+                              only_full_words: true
+                              case_sensitive: false
+                        - match_regex:
+                              patterns:
+                                  - "/(?<!(i('|’)?\\s?a?m(ay\\sbe)?\\s)((slightly|severely|in\\s?fact|like|also|ju?st?|too)\\s)?)autistic/i"
+                              normalize: true
+                    actions:
+                        log: false
+                        alert:
+                            channel: "543757010290868225"
+                            text: |-
+                                🕵️ **Suspicious message by <@!{user.id}> ({user.username}#{user.discriminator}, `{user.id}`):**
+                                {messageLink}
+                                {matchSummary}
+                    allow_further_rules: true
+
+                blocked_words_other:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "straggot"
+                                  - "straggots"
+                              only_full_words: false
+                    actions:
+                        clean: true
+                        log: false
+                        alert:
+                            channel: "543757010290868225"
+                            text: "{logMessage}"
+
+                nonutnovember:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "no nut november"
+                                  - "nnn"
+                              only_full_words: true
+                              case_sensitive: false
+                    actions:
+                        clean: true
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: |-
+                                {logMessage}
+                        add_to_counter:
+                            counter: "nnn_nsfw"
+                            amount: 1
+                    allow_further_rules: true
+
+                nitro_gen:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "nitro gen"
+                                  - "nitro generator"
+                              only_full_words: true
+                              case_sensitive: false
+                    actions:
+                        clean: true
+                        log: false
+                        warn:
+                            reason: "Automatic warning for malicious software"
+                        alert:
+                            channel: "810498491008286760"
+                            text: |-
+                                Auto Warn for suspected nitro generator scam {logMessage}
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                    allow_further_rules: true
+
+                private_lobbies_nonlfg_filter:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/code\sis\s*:?\s?c(\w|\d){7}\b/i'
+                                  - '/private\smatch(\scode(:|-)?(\sis)?|\s?:)?\s?c(\w|\d){7}\b/i'
+                                  - '/c(\w|\d){7}((\sguys)?\sjoin(\s(our|my))?)?\sprivate\smatch/i'
+                                  - '/(any(one|body)|who|\sof\syou\sguys)\s(wan(ts?|na)|down|up|trynn?a)\s(to\s(do|play|join)|for|join)(\s(a|my|our))?\sprivate\smatch/i'
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: |-
+                                <@!{user.id}> Please use the <#1063045058145828864> channel only for posting private lobby invites.
+                                Read the pins in the channel before posting.
+                            #auto_delete: 10s
+                        alert:
+                            channel: "542737704266235914"
+                            text: "{logMessage}"
+                    cooldown: 30s
+
+                trading_warn:
+                    enabled: false
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/selling\s[^]*?cheap/i'
+                                  - '/selling\s[^]*?acc(ount)?/i'
+                                  - '/stacked\s((apex(\slegends)?(\sps(4|5))?|pred(ator)?|masters?|wraith)\s)?acc(ounts?)?/i'
+                              normalize: true
+                        - match_links:
+                              include_subdomains: true
+                              only_real_links: false # Also match links that don't get highlighted
+                              include_domains:
+                                  - playerauctions.com
+                    actions:
+                        log: false
+                        clean: true
+                        warn:
+                            reason: "Automatic warn for trading."
+                        alert:
+                            channel: "810498491008286760"
+                            text: ":shopping_cart: {logMessage}"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+
+                lfg_whitelist:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "/((not|no(n)*|xp|battle(\\s)?pass|bp|ego|don('|’)?t\\sbe)\\s)boost/i"
+                                  - "/((no|don('|’)t(\\sbe)?|teammate(s)*|randoms(\\sare|\\sbe|\\skeep)?)\\s)(for\\ssale|selling)/i"
+                                  - "/boost\\smy\\sego/i"
+                                  - "/selling\\smy\\s(rp|lp)/i"
+                              normalize: true
+                    actions:
+                        clean: false
+                        log: false
+
+                lfg_rule_breaks:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "free badge"
+                                  - "sale"
+                                  - "price"
+                                  - "$"
+                                  - "boost"
+                                  - "bøøst"
+                                  - "cheap"
+                                  - "check bio"
+                                  - "check about me"
+                                  - "check profile"
+                                  - "sixman"
+                                  - "lfsix"
+                                  - "6️⃣man"
+                                  - "nineman"
+                                  - "sixstack"
+                                  - "selling"
+                                  - "free rp"
+                                  - "free lp"
+                                  - "free points"
+                                  - "free kp"
+                                  - "not free"
+                                  - "free master"
+                                  - "free pred"
+                                  - "manning"
+                                  - "trade"
+                                  - "trading"
+                                  - "Darkiskarma" #some booster on twitch making alts and advertising
+                                  - "method"
+                                  - "service"
+                                  - "dollar"
+                                  - "Captain-Carry.com"
+                                  - "trident glitch"
+                                  - "money"
+                                  - "Dm me if you want to make gaming a career"
+                                  - "coin glitch"
+                                  - "desired rank"
+                                  - "get full access to the cheat"
+                                  - "on next 8h"
+                                  - "ON NEXT 8H"
+                                  - "-Experience Pro Gameplay"
+                                  - "GET THE TEAM YOU DESERVE"
+                                  - "get the team you deserve"
+                                  - "Looking for Preds?"
+                                  - "If YOU need ANY RANK FAST then DM ME"
+                              only_full_words: false
+                              case_sensitive: false
+                              normalize: true
+                              loose_matching: true
+                        - match_words:
+                              words:
+                                  - "6man"
+                                  - "6🙍‍♂"
+                                  - "6🚶"
+                                  - "6🧍‍♂️"
+                                  - "6stack"
+                                  - "9man"
+                                  - "free 4k"
+                                  - "free master"
+                                  - "free pred"
+                                  - "easy 4k"
+                                  - "easy 20"
+                                  - "free<:4000:773859165399023628>"
+                                  - "free<:20kLegendsWake:773859166364106762>"
+                              only_full_words: false
+                              case_sensitive: false
+                              loose_matching: true
+                        - match_words:
+                              words:
+                                  - "6m"
+                                  - "9m"
+                                  - "9 m"
+                                  - "6 m"
+                                  # - 'lf 3'
+                                  # - 'lf3'
+                                  - "lf 4"
+                                  - "lf4"
+                                  - "lf 5"
+                                  - "lf5"
+                                  - "lf 6"
+                                  - "lf6"
+                                  - "6ix man"
+                                  - "IF U WANT A 4K/20 DM ME ASAP"
+                              only_full_words: true
+                              case_sensitive: false
+                        - match_regex:
+                              patterns:
+                                  - '/\$/i'
+                                  - '/buy(ing)?\s[^]*?acc(ount)?/i'
+                                  - '6\s*(\uD83D(\uDC68|\uDC69))'
+                                  - '/((yo)?u|anyone)\s(need|want)s?\shelp\swith\s(thei?re?\s)?(badges|(4|20)\s?(k|b))/i'
+                                  - '/((d|p)m|any(one|body)|if|who(\swants)?|helping)\s[^]{0,10}(help|with|people)\s(?!me\s)[^]{0,15}(4k|20|<:20kLegendsWake:773859166364106762>|<:4000:773859165399023628>)/i'
+                    actions:
+                        clean: true
+                        log: false
+                        alert:
+                            channel: "543757010290868225"
+                            text: |-
+                                {logMessage}
+                                {messageLink}
+                        reply:
+                            text: >-
+                                :warning: **Boosting**, **Trading** or **Any kind of game exploits** are **not allowed**. Message <@542736472155881473> to report rule breaks. <@!{user.id}>
+                            auto_delete: 20s
+
+                youtube_filter:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_links:
+                              include_subdomains: true
+                              only_real_links: false # Also match links that don't get highlighted
+                              include_domains:
+                                  - youtube.com
+                                  - youtu.be
+                                  - tiktok.com
+                    actions:
+                        clean: true
+                        log: false
+
+                lfg_social_filter:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_links:
+                              include_subdomains: true
+                              only_real_links: false # Also match links that don't get highlighted
+                              include_domains:
+                                  - youtube.com
+                                  - youtu.be
+                                  - twitch.tv
+                                  - tiktok.com
+                                  - kick.com
+                    actions:
+                        clean: true
+                        warn:
+                            reason: "Reason: Video/Stream promo outside <#555829999467364383>"
+                        add_to_counter:
+                            counter: "alert_count"
+                            amount: 1
+                        log: false
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+
+                private_lobbies_lfg_filter:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "code"
+                                  - "custom"
+                                  - "customs"
+                        - match_regex:
+                              patterns:
+                                  - '/private\s(match(es)?|games?|lobb(y|ies?)|t(eam\s)?d(eath(\s)?)?m(atch(es)?)?|b(attle\s)?r(oyale)?|gun\srun|control)/i'
+                    actions:
+                        clean: true
+                        log: false
+                        reply:
+                            text: |-
+                                <@!{user.id}> Please use <#1063045058145828864> channel only for posting private lobby invites.
+                                Read the pins in the channel before posting.
+                            auto_delete: 10s
+                        alert:
+                            channel: "542737704266235914"
+                            text: "{logMessage}"
+                    cooldown: 30s
+
+                lfg_chatter:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - character_spam:
+                              amount: 450
+                              within: 1m
+                    actions:
+                        clean: true
+                        reply:
+                            text: >-
+                                <@!{user.id}> Please keep lfg posts short and to the point.
+                            auto_delete: 10s
+                        alert:
+                            channel: "810498491008286760"
+                            text: "{logMessage}"
+                        log: false
+
+                vent_spam:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "/^.{1,5}$/i"
+                    actions:
+                        clean: true
+                        reply:
+                            text: >-
+                                <@!{user.id}> Please use this channel for actual venting only.
+                            auto_delete: 10s
+                        alert:
+                            channel: "542737704266235914"
+                            text: "{logMessage}"
+                        log: false
+
+                fanart_filetypes:
+                    enabled: false # Enabled in overrides
+                    triggers:
+                        - match_mime_type:
+                              whitelist_enabled: true
+                              # filetype_whitelist:
+                              #   - png
+                              #   - jpg
+                              #   - jpeg
+                              #   - gif
+                              #   - mp4
+                              #   - mov
+                              #   - avi
+                              #   - txt
+                              #   - webp
+                              #   - PNG
+                              #   - JPG
+                              #   - JPEG
+                              #   - GIF
+                              #   - MP4
+                              #   - AVI
+                              #   - TXT
+                              #   - WEBP
+                              #   - wav
+                              mime_type_whitelist:
+                                  [
+                                      "image/png",
+                                      "image/jpg",
+                                      "image/jpeg",
+                                      "image/gif",
+                                      "video/mp4",
+                                      "video/mov",
+                                      "video/avi",
+                                      "image/webp",
+                                      "video/webm",
+                                      "video/quicktime",
+                                  ]
+                    actions:
+                        clean: true
+
+                servers_respond:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "servers down"
+                                  - "servers up"
+                                  - "server down"
+                                  - "server up"
+                                  - "servers still down"
+                                  - "online down"
+                                  - "is apex down"
+                                  - "is apex up"
+                                  - "servers back up"
+                                  - "servers go back up"
+                                  - "servers back"
+                                  - "servers be up"
+                                  - "server still down"
+                                  - "apex still down"
+                                  - "is online working"
+                                  - "are the servers working"
+                                  - "is the server working"
+                                  - "are the servers online"
+                                  - "servers are slow"
+                                  - "are servers down"
+                                  - "why arent servers up"
+                                  - "are servers up"
+                                  - "servers fucked"
+                                  - "did the servers go down"
+                                  - "Anyone else having server issues"
+                                  - "anyone having issues with servers"
+                                  - "is origin down"
+                              case_sensitive: false
+                              only_full_words: false
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                <@!{user.id}> The current status of the game servers can be viewed in <#811399541118074930>.
+                    cooldown: 90s
+
+                # cross_progression_respond:
+                #   enabled: true
+                #   cooldown: 240s
+                #   triggers:
+                #   - match_words:
+                #       words:
+                #         - "cross progression"
+                #       case_sensitive: false
+                #       only_full_words: false
+                #   actions:
+                #     clean: false
+                #     log: false
+                #     reply:
+                #       text: >-
+                #         Yes, Cross Progression is finally coming to Apex Legends in Season 19! You can find more details in #game-announcements or at this link: <https://www.ea.com/en-gb/games/apex-legends/news/cross-progression>.
+                #
+                #         **Cross Progression is being rolled out in waves. Do NOT unlink/relink your account as it will not speed up the process.**
+
+                when_event:
+                    enabled: false #enable when next event/season
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "when is the update"
+                                  - "when is the season out"
+                                  - "is the new season out"
+                                  - "is the new season out yet"
+                                  - "what time does the new season start"
+                                  - "what time does the season start"
+                                  - "When does the update drop"
+                                  - "is the update here ?"
+                                  - "the update out yet?"
+                                  - "what time is the new season?"
+                                  - "Does anyone know when the update comes out"
+                                  - "when the new season coming out?"
+                                  - "When is the new season coming out"
+                                  - "when update ?"
+                                  # - "when is the event"
+                                  # - "When does the event start"
+                                  # - "Is the event out"
+                                  # - "What time is the event"
+                                  # - "how many hours till Event"
+                                  # - "when’s the event"
+                                  # - "what time does the event"
+                                  # - "how long until the event"
+                                  # - "what time does the event start"
+                                  # - "when does the new event start"
+                                  # - "how much time until the event"
+                                  # - "Did the event start"
+                              only_full_words: false
+                        - match_regex:
+                              patterns:
+                                  - '/^(at\s)?(whens?|what\stime|is|does(\sanyone\sknow\swhen)?)\s(exactly\s)?((does|is|should)\s)?(the\s)?((new\s)?season|(season\s)?update)(\sbe)?(\s?\?|$|\scom(es?|ing)\sout|\sstart|\sgo\slive|\sguys{1,5}|\slaunching|\sout|\sdrop|\shere|\scoming)(?!(\syou|\si))/i'
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: |-
+                                Season 17 - Arsenal ends on <t:1691514000:F> or <t:1691514000:R>
+                                Season 18 - Resurrection begins at the same time.
+                                <https://www.ea.com/en-gb/games/apex-legends/resurrection>
+                                <@{user.id}>
+                    cooldown: 90s
+
+                lfg_in_chats:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "anyone willing to play"
+                              case_sensitive: false
+                              only_full_words: false
+                        - match_regex:
+                              patterns:
+                                  - '(we|anyone|we)\sneed\sa\s(third|3rd)'
+                                  - "((i(('|’)|\\sa)?m)\\s|^)looking\\sfor\\sa(\\sranked)?\\s(team|squad)"
+                                  - '(how|where)\s(do|can)\si\sfind\steam\s?mates'
+                                  - "where.{1,10}lfg"
+                                  - 'is\sthere(\s(not|like))?\s(an?|no)(\sranked)?\slfg'
+                                  - '(i\s|^)need\sa\steam'
+                                  - 'looking\sfor.{0,14}team\s?mates?'
+                                  - 'looking\sfor.{0,14}to\splay'
+                                  - 'how\sdo\s((yo)?u|i)\slook\sfor(\sa)?\s(groups?|team|party|players?|squad|(pe?o?ple?|person|friend)\sto\splay|ranked\steam\s?mate)'
+                                  - '^anyone\splaying($|\?)'
+                                  - '(some|any)(body|one)\s1v1'
+                                  - '^1v1\sany(one|body)($|\?)'
+                                  - '^\/?lf(g|1|2|s|\b)'
+                                  - '((any|some)(one|1|body)|who)\s(wants?\sto|wanna|try(n?na|ing\sto)|(down|up)\s(to|for))(\s(hop\son|some|grind))?\s(play|apex|((do|push)\s)?rank|run|(a\s)?(1v1|game)|duos|trios|squad\sup)'
+                                  - 'need\s((sum1|someone|a\ssquad)|preds|people|two\s(players|people)|a\steam)\sto(\scome)*\scarry\sme'
+                                  - 'where\s(t(he)?\s?f(uck)?\s)?is(\sthe)?\slfg'
+                              case_sensitive: false
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: |-
+                                <@!{user.id}> Please find a channel listed in <#620856590806941696> to find teammates.
+                                Do not use non-lfg channels to find teammates.
+                    cooldown: 90s
+
+                cant_join_vc:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "i cant join vcs"
+                                  - "why cant i join any vcs"
+                                  - "why cant i join a vc"
+                                  - "i cant join any VC"
+                                  - "i cant join vc"
+                                  - "I can't join vc"
+                                  - "why can't i join vc"
+                                  - "why cant I join a voice channel"
+                              case_sensitive: false
+                              only_full_words: false
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                <@!{user.id}> Do Ctrl+R on Windows or restart the app if on any other platform and then try again.
+                    cooldown: 2m
+
+                report_help:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "how do I report"
+                                  - "how can I report"
+                                  - "i need a mod"
+                                  - "where can i report"
+                                  - "where do I report"
+                                  - "any mods here"
+                              case_sensitive: false
+                              only_full_words: false
+                        - match_regex:
+                              patterns:
+                                  - '/(how|can|could|any\sway)\s(do\si|can\si|i|to|does\sone)\s(get(\sin\stouch\swith)*|dm|contact|talk(\sto))\s(a\s|to\sa\s)*(discord\s|server\s)*(mods*)/i'
+                                  - '/any(\sof\sthe)?(\s(server|apex|discord))?\smods*(\s(on(line)?|active|in))?\shere/i'
+                                  - '/is\sthere\s(any|a)\sway\s(i\s(could|can|may)|to)\s(possibly\s)?report/i'
+                                  - '/(mods?|someone)\s(please|pls)\sban(?!\sme)/i'
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                <@!{user.id}> You can find instructions for help in <#847026212420976670>.
+                    cooldown: 90s
+
+                lfg_instructions:
+                    enabled: false
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/how\s(tf\s)*do\s(you|i)\s(send|make|host|guys\screate|use|put|do|link|start|create|post)\s(a|the|that|post|vc|group|mrvn|up|one|my|those|post)\s(looking\sfor\sgroup|lfg|group|mrvn|voice|post|chat|thingy|call|vc|invite|a\sgroup|of\sthose\svc\slinks)*/i'
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                <@!{user.id}> You can find LFG instructions <#620856590806941696>.
+                    cooldown: 90s
+
+                modmail_mention:
+                    enabled: false
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "<@!542736472155881473>"
+                                  - "<@542736472155881473>"
+                                  - "<@&542793556734115892>"
+                              case_sensitive: false
+                              only_full_words: false
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                <@!{user.id}> Please DM the ModMail bot to report. Mentioning ModMail only generates this message. You can find instructions for reporting in <#847026212420976670>.
+                    cooldown: 90s
+
+                lfg_help:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/what\sdoes\s(lfg|lf1|lf2)\smean/i'
+                                  - '/what\sis\s(lfg|lf1|lf2)/i'
+                              case_sensitive: false
+                              only_full_words: false
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                <@!{user.id}> LFG is an acronym for Looking For Group.
+                    cooldown: 90s
+
+                legend_role_reply:
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/how\s(((((do|does|can)\s(i|you|u|one|ppl)|(to|i))\s(get|earn))\s((image|legend|role)|(the\s(image|legend|role))))|image|legend)\s(perms?|rank|color|role)/i'
+                                  - '/why\s((wont|dont|arent)|((wont|dont|arent)\s(my|the)))\sgifs?\swork/i'
+                                  - '/how\s(to|(do|can)\si|u)\sget\s(image|pic|media)\sperms?/i'
+                                  - '/how\s\w*\s*\w*\s*(get|send)\s\w*\s*(perms?|color|colour|picture|pic)/i'
+                                  - "/why\\scan('t|t)\\si\\ssend\\s(images?|pictures?)/i"
+                                  - "/(i|gives?|(where|what)(s|'s|\\s(is|does))?)\\s(((really|just|kinda|)\\swant|want)\\s|me\\s|is\\s)?(a\\s|the\\s|my\\s)?legend\\srole/i"
+                                  - '/how\s((do|can)\s(i|you|u)|does\sone|to)\sbecome\s(a\s)?legend/i'
+                                  - '/how\s(do|does)\s(one|u)\sget\s(a\s|the\s)?(legend|a|the\scolor)\srole/i'
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                <@!{user.id}> The Legend role is an earned role, given to users automatically who are active and follow the rules. It includes a few extra perms, such as image posting and embed permissions, as well as the ability to change the color of your name. The role is applied automatically so you don't need to ask for it.
+                    cooldown: 90s
+
+                dead_chat:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "dead chat"
+                                  - "chat dead"
+                              case_sensitive: false
+                              only_full_words: false
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                https://cdn.discordapp.com/attachments/542742664165195787/882646160613986444/dedchat.gif
+                    cooldown: 90s
+
+                get_hug:
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "can i get a hug"
+                                  - "can I get hugs"
+                                  - "i need hug"
+                                  - "I need a hug"
+                                  - "hug me please"
+                                  - "hug me pls"
+                              case_sensitive: false
+                              only_full_words: false
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                <@!{user.id}> <:WattLifeHugFLARE:736558198844030976>
+                    cooldown: 90s
+
+                birthday_wish:
+                    enabled: true
+                    triggers:
+                        - match_words:
+                              words:
+                                  - "Today's my birthday"
+                                  - "today is my birthday"
+                                  - "Today’s my actual birthday"
+                                  - "today was my birthday"
+                                  - "today's my bday"
+                                  - "Today's my b-day"
+                                  - "today was my b-day"
+                                  - "today was my bday"
+                              case_sensitive: false
+                              only_full_words: false
+                        - match_regex:
+                              patterns:
+                                  - "/(?<!tomorrow\\s)it(s|'s)\\smy\\s(birthday|b'day|bday|borthday)(?!\\smonth|\\stomorrow|\\sin|\\son)/i"
+                    actions:
+                        clean: false
+                        log: false
+                        reply:
+                            text: >-
+                                🎂 Happy Birthday <@!{user.id}>! 🎂
+                    cooldown: 90s
+
+                sticker_filter:
+                    enabled: false #enabled in overrides
+                    triggers:
+                        - sticker_spam:
+                              amount: 1
+                              within: 1s
+                    actions:
+                        clean: true
+                        log: false
+
+                jd_meme:
+                    enabled: false
+                    allow_further_rules: true
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "^!"
+                    actions:
+                        reply: "stop posting commands here jd"
+
+                prayer_channel_rule:
+                    enabled: false #enabled in overrides
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - '/^I\spray\sto\sthe\sAllfather\sfor\sblessings\supon\sthe\sservers\sso\sthey\smay\sbe\salive\sonce\sagain$/i'
+                    actions:
+                        log: false
+
+                media_detect_mediaonly:
+                    enabled: false # Disabled by default, you should enable this ONLY for your media-only channel
+                    triggers:
+                        - match_mime_type: # These match on the actual MIME type of the file (the data content type, regardless of what the file extension is)
+                              mime_type_blacklist:
+                                  - "image/png"
+                                  - "image/jpeg"
+                                  - "image/gif"
+                                  - "video/mp4"
+                                  - "video/quicktime"
+                                  - "image/webp"
+                                  - "video/webm"
+                                  - "image/jfif"
+                                  - "video/x-msvideo"
+                              whitelist_enabled: false
+                              blacklist_enabled: true
+                        - match_regex:
+                              patterns:
+                                  - 'http?s:\/\/\S+\.(gif|jpe?g|png|webp|mov|m4a|mp4|webm)'
+                    actions:
+                        log: false
+                # We don't want any actions to be taken, only to stop the processing of automod actions further down the chain, so our "delete_everything" rule doesn't run if there is media in the message
+
+                # This rule will delete anything that it's "enabled" for, and that passed our "media_detect" rule
+                delete_everything_mediaonly:
+                    enabled: false # Disabled by default, you should enable this ONLY for your media-only channel
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "[^]" # "Match any piece of text"
+                    actions:
+                        clean: true
+                        reply:
+                            text: "Only media is allowed in this channel!"
+                            inline: true
+                            auto_delete: 10s
+                        log: false
+
+                delete_everything: #rule that deletes everything in a channel when activated for it
+                    enabled: false
+                    affects_bots: false
+                    triggers:
+                        - match_regex:
+                              patterns:
+                                  - "[^]"
+                        - match_attachment_type:
+                              filetype_whitelist: []
+                              whitelist_enabled: true
+                    actions:
+                        clean: true
+                        log: false
+                        alert:
+                            channel: "542737704266235914"
+                            text: "{logMessage}"
+
+                legend_mute_reduce: # Only triggers on automatic mutes
+                    triggers:
+                        - mute:
+                              automatic: true
+                              manual: false
+                    actions:
+                        add_to_counter:
+                            counter: "legend"
+                            amount: -50
+                        log: false
+
+                legend_mute_reset: # Only triggers on manual mutes
+                    triggers:
+                        - mute:
+                              manual: true
+                              automatic: false
+                    actions:
+                        set_counter:
+                            counter: "legend"
+                            value: 300
+                        log: false
+
+                legend_warn_reduce: # Only triggers on manual warnings
+                    triggers:
+                        - warn:
+                              manual: true
+                              automatic: false
+                    actions:
+                        add_to_counter:
+                            counter: "legend"
+                            amount: -100
+                        log: false
+
+                legend_ban_reset:
+                    triggers:
+                        - ban: {}
+                    actions:
+                        set_counter:
+                            counter: "legend"
+                            value: 0
+                        remove_roles: [
+                                "571248472351571968",
+                                "770613937040654376",
+                                "668608582320914472",
+                                "668608583885258773",
+                                "668608580945051658",
+                            ] # Legend + BPOG roles
+                        log: false
+
+                good_messages: # This rule needs to be the *last* rule in automod that react to messages (counter rules can come after it)
+                    cooldown: 30s # Otherwise our filter rules will *not* be executed
+                    triggers:
+                        - any_message: {}
+                    actions:
+                        log: false
+                        add_to_counter:
+                            counter: "legend"
+                            amount: 1
+
+                grant_legend:
+                    triggers:
+                        - counter_trigger:
+                              counter: "legend"
+                              trigger: "grant_legend"
+                    actions:
+                        add_roles: ["571248472351571968"]
+                        add_to_counter:
+                            counter: "legend"
+                            amount: 100
+                        alert:
+                            channel: "669326208273743912"
+                            text: "Hi <@{user.id}>, you've been given the Legend role!"
+                            allowed_mentions:
+                                users: true
+
+                cap_legend_counter:
+                    triggers:
+                        - counter_trigger:
+                              counter: "legend"
+                              trigger: "cap_counter"
+                    actions:
+                        set_counter:
+                            counter: "legend"
+                            value: 2650
+                        log: false
+
+                remove_legend:
+                    triggers:
+                        - counter_trigger:
+                              counter: "legend"
+                              trigger: "grant_legend"
+                              reverse: true
+                    actions:
+                        remove_roles: [
+                                "571248472351571968",
+                                "770613937040654376",
+                                "668608582320914472",
+                                "668608583885258773",
+                                "668608580945051658",
+                            ] # Legend + BPOG roles
+
+        overrides:
+            # Mod perms
+            - level: ">=50"
+              config:
+                  can_set_antiraid: true
+            # Disable chatter in the #use-bots-here channel
+            - channel: "632283707482308608" # USE-BOTS-HERE
+              config:
+                  rules:
+                      no_chatter_in_bot_channel:
+                          enabled: true
+            # Disable youtube links in #in-game-moments
+            - channel: "555829982887149579" # IN-GAME-MOMENTS
+              config:
+                  rules:
+                      youtube_filter:
+                          enabled: true
+
+            - channel: "1333015073307754556" # your media-only channel
+              config:
+                  rules:
+                      media_detect_mediaonly:
+                          enabled: true
+                      delete_everything_mediaonly:
+                          enabled: true
+                      blocked_invites_chats:
+                          enabled: true
+
+            # LFG CHANNEL OVERRIDES
+            - category:
+                  - "542415274544988182" # NA LFG
+                  - "542415434599628801" # EU LFG
+                  - "542415712229130297" # OCE LFG
+                  - "543049006427668500" # ASIA LFG
+                  - "543053590756065300" # LATAM LFG
+                  - "902711503340318760" # EVENT LFG
+                  - "1062462468380688475" # OTHER LFG
+                  - "1184019657791901797" # SERVER EVENTS
+              config:
+                  rules:
+                      lfg_chatter:
+                          enabled: true
+                      blocked_invites_chats:
+                          enabled: false
+                      lfg_in_chats:
+                          enabled: false
+                      lfg_social_filter:
+                          enabled: true
+                      lfg_whitelist:
+                          enabled: true
+                      lfg_rule_breaks:
+                          enabled: true
+                      legend_role_reply:
+                          enabled: false
+                      modmail_mention:
+                          enabled: true
+                      dead_chat:
+                          enabled: false
+                      blocked_invites_lfg:
+                          enabled: true
+                      lfg_instructions:
+                          enabled: true
+                      private_lobbies_lfg_filter:
+                          enabled: true
+                      trading_warn:
+                          enabled: true
+                      sticker_filter:
+                          enabled: true
+
+            # CHAT CHANNEL OVERRIDES
+            - category:
+                  - "839268221433151488" # GENERAL
+                  - "542431890615959562" # APEX CHANNELS
+                  # - "542415712229130297" # APEX CONTENT CREATION
+                  - "632282047532236800" # MISCELLANEOUS
+              config:
+                  rules:
+                      blocked_invites_lfg:
+                          enabled: false
+                      private_lobbies_nonlfg_filter:
+                          enabled: true
+
+            # Fanart filetypes
+            - category: "555828818388975626"
+              config:
+                  rules:
+                      fanart_filetypes:
+                          enabled: true
+                      legend_role_reply:
+                          enabled: false
+            - channel: "810303549958914118" # Disable in clip submissions
+              config:
+                  rules:
+                      fanart_filetypes:
+                          enabled: false
+
+              #prayer channel rule
+            - channel: "1126940431318519998"
+              config:
+                  rules:
+                      prayer_channel_rule:
+                          enabled: true
+                      delete_everything:
+                          enabled: true
+
+            - channel: "735060079664955472"
+              config:
+                  rules:
+                      vent_spam:
+                          enabled: true
+
+              #custom lobbies channel rule
+            - channel: "1063045058145828864"
+              config:
+                  rules:
+                      lfg_chatter:
+                          enabled: true
+                      blocked_invites_chats:
+                          enabled: false
+                      lfg_in_chats:
+                          enabled: false
+                      lfg_social_filter:
+                          enabled: true
+                      lfg_rule_breaks:
+                          enabled: true
+                      legend_role_reply:
+                          enabled: false
+                      modmail_mention:
+                          enabled: true
+                      dead_chat:
+                          enabled: false
+                      blocked_invites_lfg:
+                          enabled: true
+                      lfg_instructions:
+                          enabled: true
+                      # custom_lobbies:
+                      #   enabled: true
+                      delete_everything:
+                          enabled: true
+
+                  #tournament lfg channel rule
+            - channel: "1099272018626629722"
+              config:
+                  rules:
+                      lfg_chatter:
+                          enabled: true
+                      blocked_invites_chats:
+                          enabled: false
+                      lfg_in_chats:
+                          enabled: false
+                      lfg_social_filter:
+                          enabled: true
+                      legend_role_reply:
+                          enabled: false
+                      modmail_mention:
+                          enabled: true
+                      dead_chat:
+                          enabled: false
+                      blocked_invites_lfg:
+                          enabled: true
+                      lfg_instructions:
+                          enabled: true
+                      delete_everything:
+                          enabled: true
+
+            # Mod exceptions / mod channel exceptions
+            - any:
+                  - level: ">=50"
+                  - category:
+                        - "553324983640653827" # MODS
+                        - "542737669914886144" # DISCORD MODS
+                        - "553324623501066241" # REDDIT MODS
+                        - "544578842275086337" # BOT CHANNELS
+              config:
+                  rules:
+                      no_chatter_in_bot_channel:
+                          enabled: false
+                      suspicious_messages:
+                          enabled: false
+                      bad_names:
+                          enabled: false
+                      blocked_words_nsfw:
+                          enabled: false
+                      blocked_words_racial:
+                          enabled: false
+                      blocked_words_homophobic:
+                          enabled: false
+                      blocked_words_automute:
+                          enabled: false
+                      blocked_tokens_spam:
+                          enabled: false
+                      blocked_tokens_copypasta:
+                          enabled: false
+                      blocked_regex_racial:
+                          enabled: false
+                      blocked_regex_exploit:
+                          enabled: false
+                      blocked_regex_other:
+                          enabled: false
+                      loose_matches:
+                          enabled: false
+                      loose_matches_racial:
+                          enabled: false
+                      loose_matches_toxic:
+                          enabled: false
+                      loose_matches_toxic_2:
+                          enabled: false
+                      slur_bait:
+                          enabled: false
+                      blocked_invites_chats:
+                          enabled: false
+                      blocked_invites_lfg:
+                          enabled: false
+                      blocked_links:
+                          enabled: false
+                      spam:
+                          enabled: false
+                      lfg_chatter:
+                          enabled: false
+                      youtube_filter:
+                          enabled: false
+                      blocked_words_other:
+                          enabled: false
+                      lfg_social_filter:
+                          enabled: false
+                      lfg_rule_breaks:
+                          enabled: false
+                      when_event:
+                          enabled: false
+                      report_help:
+                          enabled: false
+                      lfg_help:
+                          enabled: false
+                      lfg_instructions:
+                          enabled: false
+                      remove_legend:
+                          enabled: false
+                      legend_role_reply:
+                          enabled: false
+                      lfg_in_chats:
+                          enabled: false
+                      modmail_mention:
+                          enabled: false
+                      servers_respond:
+                          enabled: false
+                      # cross_progression_respond:
+                      #   enabled: false
+                      nitro_gen:
+                          enabled: false
+                      steam_scam_filter_2:
+                          enabled: false
+                      nonutnovember:
+                          enabled: false
+                      ip_logger_ban:
+                          enabled: false
+                      referal_spam_links:
+                          enabled: false
+                      blocked_words_no_action:
+                          enabled: false
+                      blocked_words_but_regex:
+                          enabled: false
+                      block_hypermyst_links:
+                          enabled: false
+                      devs_threat:
+                          enabled: false
+                      non_malicious_racial:
+                          enabled: false
+                      trading_warn:
+                          enabled: false
+                      non_malicious_hitler:
+                          enabled: false
+                      loose_matches_hitler:
+                          enabled: false
+                      porn_link_ban:
+                          enabled: false
+                      private_lobbies_lfg_filter:
+                          enabled: false
+                      delete_everything:
+                          enabled: false
+
+            - channel:
+                  - "1087036862398464201" # EVENT PLANNING
+                  - "755973360751476776" # SERVER EVENTS
+              config:
+                  rules:
+                      spam:
+                          enabled: false
+
+            # Respawn+ exception for spam detection
+            - level: ">=10"
+              config:
+                  rules:
+                      spam:
+                          enabled: false
+                      good_messages:
+                          enabled: false
+
+            # Antiraid filters
+            - extra:
+                  antiraid_level: "low"
+              config:
+                  rules:
+                      antiraid_auto_kick:
+                          enabled: true
+
+            - extra:
+                  antiraid_level: "high"
+              config:
+                  rules:
+                      antiraid_auto_kick_all:
+                          enabled: true
+
+            # jd meme
+            - channel:
+                  - "592535074352922624" # discord-mod-chat
+                  - "541484311849730062" # general
+              user: "169557401601572865" # jd
+              config:
+                  rules:
+                      jd_meme:
+                          enabled: false
+
+    spam:
+        config:
+            max_voice_moves:
+                count: 10
+                interval: 60
+                mute: true
+                mute_time: 60
+        overrides:
+            # Respawn+ exception
+            - level: ">=10"
+              config:
+                  max_voice_moves: null
