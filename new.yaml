@@ -4,3 +4,20 @@
 
 # Bot Prefix
 prefix: "!"
+
+# Levels for Enabling/Disabling Automod Rules
+levels:
+    # Dragory
+    "106391128718245888": 100
+
+    # Staff
+    "542068272007217193": 100 # Admin
+    "542793364722941972": 75 # Moderators
+    "1168243469458878566": 50 # Trial Moderators
+    "543059516393259019": 10 # Subreddit Moderators
+    "583215397004640261": 10 # Retired Staff
+
+    # Misc.
+    "542018236405907466": 10 # Respawn
+    "543880801025130517": 10 # EA
+    "571248472351571968": 5 # Legend
