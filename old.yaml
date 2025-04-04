@@ -436,7 +436,7 @@ plugins:
             # Old ban message
             # ban_message: "You have been banned from the Apex Legends server.\nReason given: {reason}\n\nIf you'd like to appeal or discuss your ban, join the appeals server here and follow the instructions: https://discord.gg/rBtUR22"
             # New ban message
-            ban_message: "You have been banned from the Apex Legends server.\nReason given: {reason}"
+            ban_message: "You have been banned from the Apex Legends server for: {reason}.\n\nDue to the nature of bans, this is permanent and we will not offer the chance to appeal."
             # Message channel
             message_channel: "543020770700296213"
         overrides:
@@ -588,15 +588,6 @@ plugins:
                         alert:
                             channel: "810498491008286760"
                             text: ":hammer: {logMessage}"
-
-                soundmoji_filter:
-                    enabled: false
-                    triggers:
-                        - match_regex:
-                              patterns:
-                                  - "<sound:([0-9]{1,19}:[0-9]{1,19}|[1-6])>"
-                    actions:
-                        clean: true
 
                 non_malicious_hitler:
                     triggers:
@@ -921,6 +912,8 @@ plugins:
                                   - "boltbex"
                                   - "voltvex"
                                   - "I Suggest You Contact The LiveSupport System For Assistance"
+                                  - "We’ve partnered with OpenSea for a new free"
+                                  - "Weve partnered with OpenSea for a new free"
                     actions:
                         clean: true
                         warn:
@@ -1341,6 +1334,7 @@ plugins:
                                   - own3d.pro
                                   - minepi.com
                                   - kolibrigames.com
+                                  - roobet.com
                               case_sensitive: false
                     actions:
                         clean: true
